@@ -37,7 +37,7 @@ public:
 
         return ptr;            
     }
- /*-Метод - добавление нового обьекта в конец-*/
+ /*-Метод - добавление нового объекта в конец-*/
     Node* push_back(double data) {
         Node* ptr = new Node(data);
         ptr->prev = tail;
@@ -49,7 +49,7 @@ public:
 
         return ptr;
     }
-/*-Метод - удаление обьекта в начале-*/
+/*-Метод - удаление объекта в начале-*/
     void pop_front() {
         if (head == NULL) return;
 
@@ -87,7 +87,7 @@ public:
         }
         return ptr;
     }
-/*-Оператор который возвращает элемент по определеннму индыксу-*/
+/*-Оператор - который возвращает элемент по определённому индексу-*/
 
 Node* operator [] (int index) {
     return getAt(index);
